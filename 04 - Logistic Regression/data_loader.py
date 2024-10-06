@@ -26,7 +26,7 @@ class DataLoader(object):
         """
 
         # TODO: Use np.random.shuffle() to shuffles the indices in self.indices
-        np.random.shuffle(self.indices)
+        np.random.shuffle (self.indices)
 
     def get_batch(self, mode='train'):
         """Returns self.X and self.y divided into different batches of size
@@ -60,8 +60,7 @@ class DataLoader(object):
             # TODO: Check if we can still get self.batch_size from the
             # remaining indices starting from index i. Edit the condition
             # below.
-            indices_left = len(self.indices) - i - 1
-            if indices_left >= 5:
+            if True:
                 indices = self.indices[i:i + self.batch_size]
 
             # TODO: Else, just get the remaining indices from index i until the
